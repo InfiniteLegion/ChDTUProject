@@ -1,5 +1,5 @@
 import {View} from "react-native";
-import Chat from "../components/Chat/Chat/Chat.tsx";
+import Chat from "../../components/Chat/Chat/Chat.tsx";
 
 function ChatDisplay() {
     return(

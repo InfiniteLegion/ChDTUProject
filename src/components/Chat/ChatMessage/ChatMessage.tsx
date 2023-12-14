@@ -1,9 +1,9 @@
 import defaultStyles from './styles.ts';
 import {Text, View} from "react-native";
-import Avatar from "../../Avatar/Avatar.tsx";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import {Message} from "../../interfaces/Message.ts";
 import {User} from "../../interfaces/User.ts";
+import ChatAvatar from "../../ChatAvatar/ChatAvatar.tsx";
 
 export interface ChatMessageProps {
     id: string,
@@ -21,7 +21,7 @@ function ChatMessage({ id, text, from, sourceReply, isMyMessage }: ChatMessagePr
             <View style={styles.root}>
                 <View style={styles.content}>
                     <View>
-                        <Avatar />
+                        <ChatAvatar />
                     </View>
                     <View style={styles.contentContainer}>
                         {sourceReply && <>
